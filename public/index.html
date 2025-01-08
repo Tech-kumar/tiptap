@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#007bff" />
+    <meta name="description" content="A customizable React app with rich text editing features using Tiptap." />
+    <meta property="og:title" content="Tiptap React Editor" />
+    <meta property="og:description" content="A React app showcasing custom Tiptap extensions." />
+    <meta property="og:image" content="%PUBLIC_URL%/social-preview.png" />
+    <meta property="og:url" content="https://your-app-url.com" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css" />
+    <title>Tiptap React App</title>
+
+    <!-- Additional Custom Styles -->
+    <style>
+      /* Global Styles */
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #007bff;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        color: #444;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      /* Main container */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Editor Section */
+      .editor-wrapper {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-top: 30px;
+      }
+
+      /* Button Styling */
+      button {
+        background-color: #007bff;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 10px 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+
+      /* Responsive Layout */
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .editor-wrapper {
+          padding: 15px;
+        }
+      }
+
+      /* Animation */
+      .fade-in {
+        animation: fadeIn 1s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root" class="fade-in"></div>
+    
+    <!-- Adding Footer -->
+    <footer style="text-align: center; padding: 20px; background-color: #007bff; color: white; position: fixed; width: 100%; bottom: 0;">
+      <p>&copy; 2025 Tiptap React App. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
